@@ -1,0 +1,3 @@
+                                                      Welcome to NASCII - Your Daily Astronomy Picture Viewer!
+
+Explore the wonders of the cosmos through stunning images captured by NASA's telescopes and satellites translated into ASCII art. Each day, NASA shares a captivating Astronomy Picture of the Day (APoD), and with NASCII, you can effortlessly dive into the universe's beauty as text. Today's APoD awaits you, but if you'd like to see an APoD from a specific date or simply wish to be surprised, you're in control. Please enter a date to view the APoD from that day. Type 'random' to experience a serendipitous journey through the stars. PS: APoD images only exist from 01-05-1995. Enter the desired date accordingly. 

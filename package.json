@@ -1,0 +1,26 @@
+{
+  "name": "nascii",
+  "version": "1.0.1",
+  "description": "Command line app that transforms the picture returned from a NASA API call and transforms it into ascii art.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "the-code-papi",
+  "license": "ISC",
+  "bin": {
+    "nascii": "index.js"
+  },
+  "dependencies": {
+    "asciify-image": "^0.1.1",
+    "chalk": "^5.3.0",
+    "chalk-animation": "^2.0.3",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "faker": "^5.5.3",
+    "figlet": "^1.6.0",
+    "inquirer": "^9.2.11",
+    "nascii": "^1.0.0"
+  }
+}
