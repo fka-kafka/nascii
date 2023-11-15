@@ -4,11 +4,11 @@ Nasa-APOD-CLI is a command-line application that brings the wonders of space to 
 
 # Features
 
-Date-based Retrieval: Choose any date to explore the cosmic beauty captured by NASA.
+**Date-based Retrieval:** Choose any date to explore the cosmic beauty captured by NASA.
 
-Local Save: Save your favorite space images directly to your current directory for future enjoyment.
+**Local Save:** Save your favorite space images directly to your current directory for future enjoyment.
 
-ASCII Art Display: Experience the awe-inspiring space images in a unique and creative way through ASCII art right in your terminal.
+A**SCII Art Display:** Experience the awe-inspiring space images in a unique and creative way through ASCII art right in your terminal.
 
 # Installation
 
