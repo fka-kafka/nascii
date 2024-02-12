@@ -17,6 +17,7 @@ dotenv.config();
 let dateOfInquiry;
 let randomDate;
 let asciiPath = "";
+const urlDivider = process.platform === "win32" ? "\\" : "/";
 
 // async function that displays the CLI app header and description
 async function title() {
@@ -101,31 +102,36 @@ async function dates() {
       // console.log(dateOfInquiry);
 
       function isDateInRange(dateOfInquiry) {
-        const parts = dateOfInquiry.split('-');
+        const parts = dateOfInquiry.split("-");
         if (parts.length !== 3) {
           return false; // Date format should be "dd-mm-yyyy"
         }
-      
+
         const day = parseInt(parts[0], 10);
         const month = parseInt(parts[1], 10);
         const year = parseInt(parts[2], 10);
-      
+
         // Check if day, month, and year are valid numbers
         if (
-          isNaN(day) || isNaN(month) || isNaN(year) ||
-          month < 1 || month > 12 || day < 1 || day > 31
+          isNaN(day) ||
+          isNaN(month) ||
+          isNaN(year) ||
+          month < 1 ||
+          month > 12 ||
+          day < 1 ||
+          day > 31
         ) {
           return false; // Invalid date components
         }
-      
+
         const inputDate = new Date(year, month - 1, day); // Months are zero-based
         const startDate = new Date(1995, 5, 1); // June is month 5 (zero-based)
         const currentDate = new Date();
-      
+
         if (inputDate >= startDate && inputDate <= currentDate) {
           return true; // Date is within the specified range
         }
-      
+
         return false; // Date is outside the range
       }
 
@@ -233,7 +239,7 @@ async function getImage() {
                     const currentWorkingDirectory = process.cwd();
                     console.log(
                       `Image saved to ${chalk.green(
-                        currentWorkingDirectory + "\\" + asciiPath
+                        currentWorkingDirectory + `${urlDivider}` + asciiPath
                       )} `
                     );
                     displayASCIIArt();
@@ -299,7 +305,7 @@ async function getImage() {
                     const currentWorkingDirectory = process.cwd();
                     console.log(
                       `Image saved to ${chalk.green(
-                        currentWorkingDirectory + "\\" + asciiPath
+                        currentWorkingDirectory + `${urlDivider}` + asciiPath
                       )} \n`
                     );
                     displayASCIIArt();
