@@ -9,7 +9,3 @@ Nasa-APOD-CLI is a command-line application that brings the wonders of space to 
 **Local Save:** Save your favorite space images directly to your current directory for future enjoyment.
 
 A**SCII Art Display:** Experience the awe-inspiring space images in a unique and creative way through ASCII art right in your terminal.
-
-# Installation
-
-npm install -g nascii
